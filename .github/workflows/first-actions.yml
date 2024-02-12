@@ -6,7 +6,8 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest   #this is to use Github runner
+    runs-on: self-hosted      #This is to use the self runner 
     strategy:
       matrix:
         python-version: ["3.9", "3.10", "3.11"]
